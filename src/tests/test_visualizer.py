@@ -78,7 +78,7 @@ async def test_composed_devices(tmp_path):
     dgx_edges = data["dgx_a100.json"]["edges"]
     cx5_nodes = data["cx5_100gbe.json"]["nodes"]
     cx5_edges = data["cx5_100gbe.json"]["edges"]
-    assert len(dgx_nodes) == 37, "DGX should have 38 component nodes"
+    assert len(dgx_nodes) == 37, "DGX should have 37 component nodes"
     assert len(dgx_edges) > 0, "DGX should have internal edges"
     assert len(cx5_nodes) == 4, "cx5_100gbe should have 4 nodes"
     assert len(cx5_edges) > 0, "cx5_100gbe should have edges"
